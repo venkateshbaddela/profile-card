@@ -25,8 +25,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/profile-card-component-using-html5-css-flexboxradialgradient-lcDha9vjr]
+- Live Site URL: [https://venkateshbaddela.github.io/profile-card/]
 
 ### Built with
 
