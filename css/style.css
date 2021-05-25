@@ -26,12 +26,13 @@ html {
 
 body {
   font-family: var(--font-family);
+  height: 100vh;
 }
 
 /* Layout */
 
 .container {
-  height: 100vh;
+  height: 100%;
   background: radial-gradient(
       circle at bottom left,
       rgba(31, 172, 182, 1) 0%,
@@ -115,6 +116,18 @@ body {
 .heading-2 {
   font-size: 2.3rem;
   padding-bottom: 1rem;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.attribution{
+  font-size:1.5rem;
+  }
 }
 
 /* Media-Queries */
