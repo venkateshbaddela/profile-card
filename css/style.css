@@ -1,0 +1,138 @@
+/* css Variables */
+
+:root {
+  --dary-cyan: rgb(25, 162, 174);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+
+  --font-family: "Kumbh Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* Layout */
+
+.container {
+  height: 100vh;
+  background: radial-gradient(
+      circle at bottom left,
+      rgba(31, 172, 182, 1) 0%,
+      rgba(25, 161, 173, 0) 50%
+    ),
+    radial-gradient(
+      circle at 10% 0%,
+      rgba(31, 172, 182, 1) 35%,
+      rgba(25, 161, 173, 0.5) 30%
+    ),
+    radial-gradient(
+      circle at 87% 105%,
+      rgba(31, 172, 182, 1) 35%,
+      rgba(25, 161, 173, 1) 35%
+    );
+  display: flex;
+}
+
+.main {
+  width: 35rem;
+  margin: auto;
+  background-color: var(--neutral-white);
+  border-radius: 13px;
+}
+.section__top {
+  padding-bottom: 3.5rem;
+  border-bottom: 0.5px solid var(--dark-gray);
+}
+
+/* Images */
+.section-img {
+  position: relative;
+}
+.section-svg {
+  max-width: 35rem;
+}
+.svg {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--neutral-white);
+  border: 5px solid var(--neutral-white);
+  border-radius: 100%;
+}
+
+/* Typography */
+
+.section-content {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.heading-1 {
+  padding: 1rem 0;
+  font-size: 2.3rem;
+}
+
+.text {
+  font-size: 1.3rem;
+  color: var(--dark-gray);
+}
+
+.section-list {
+  display: flex;
+  justify-content: center;
+  padding: 4.5rem 2rem;
+  text-align: center;
+}
+
+.list-item {
+  list-style: none;
+  flex: 1 1 auto;
+}
+
+.heading-2 {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+/* Media-Queries */
+@media screen and (max-width: 400px) {
+  .main {
+    margin: auto 3rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  .section-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4.5rem 2rem;
+    text-align: center;
+  }
+
+  .list-item:not(:last-child) {
+    padding-bottom: 1.5rem;
+  }
+}
