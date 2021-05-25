@@ -147,4 +147,10 @@ body {
   .list-item:not(:last-child) {
     padding-bottom: 1.5rem;
   }
+    .footer {
+    bottom: 0;
+  }
+  .attribution {
+    font-size: 1rem;
+  }
 }
